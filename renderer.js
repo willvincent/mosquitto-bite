@@ -2,22 +2,15 @@
 // be executed in the renderer process for that window.
 // All of the Node.js APIs are available in this process.
 
-const notifier = require('node-notifier');
-
+const ipc = require('electron').ipcRenderer;
 
 let fire = function() {
-  notifier.notify({
-    title: 'Test notification!',
-    message: 'This is a test notification. Neat, huh?',
-    sound: true,
-    wait: true
-  }, function (err, response) {
-  });
+  ipc.send('notify', {title: 'Test', msg: 'Testing!'});
 };
-
-
-fire();
-
+let quit = function() {
+  ipc.send('quit');
+}
 document.addEventListener('DOMContentLoaded', function() {
   document.getElementById("notify").addEventListener("click", fire);
-})
+  document.getElementById('quit').addEventListener('click', quit);
+});
