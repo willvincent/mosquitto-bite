@@ -15,5 +15,9 @@
   "license": "GPL",
   "devDependencies": {
     "electron": "^1.4.1"
+  },
+  "dependencies": {
+    "mqtt": "^2.3.0",
+    "node-notifier": "^4.6.1"
   }
 }
