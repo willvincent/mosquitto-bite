@@ -1,0 +1,19 @@
+{
+  "name": "mosquitto-bit",
+  "version": "0.0.1",
+  "description": "A small MQTT client",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/willvincent/mosquitto-bite",
+  "keywords": [
+    "Electron",
+    "mqtt"
+  ],
+  "author": "Will Vincent <will@willvincent.com>",
+  "license": "GPL",
+  "devDependencies": {
+    "electron": "^1.4.1"
+  }
+}
