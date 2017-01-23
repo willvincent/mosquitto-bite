@@ -17,6 +17,7 @@
     "electron": "^1.4.1"
   },
   "dependencies": {
+    "menubar": "^5.2.0",
     "mqtt": "^2.3.0",
     "node-notifier": "^4.6.1"
   }
