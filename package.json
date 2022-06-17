@@ -14,7 +14,7 @@
   "author": "Will Vincent <will@willvincent.com>",
   "license": "GPL",
   "devDependencies": {
-    "electron": "^1.4.1"
+    "electron": "^15.5.5"
   },
   "dependencies": {
     "mqtt": "^2.3.0",
